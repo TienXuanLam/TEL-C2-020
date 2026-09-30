@@ -1,0 +1,17 @@
+# Agent Manifest — AgentRegistry entry point
+# This file is required for AgentRegistry auto-discovery (lazy-load architecture)
+
+id: "TEL-C2-020"
+name: "5GNetworkSliceSLAMonitoringReportingAgent"
+namespace: "tel"
+version: "0.1.0"
+description: "5G Network Slice SLA Monitoring & Reporting Agent"
+enabled: true
+category: "Cat 2"
+industry: "TEL"
+base_type: "DocGenerationAgent"  # RAGAgent | ChatAgent | ReActAgent | DocGenerationAgent
+class: "src.graph.graph.FiveGNetworkSliceSLAMonitoringReportingAgent"
+required_trust_level: "VERIFIED_EXTERNAL"
+requires:
+  secrets: []
+  extras: []
